@@ -57,6 +57,9 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     public boolean hasCity(City city){
+        for(City c : cities){
+            if (city == c) return true;
+        }
         return false;
     }
 }
